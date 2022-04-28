@@ -20,23 +20,66 @@ header {
     margin-top: 50px;
 }
 
+.container {
+    width: 500px;
+    margin: 0 auto;
+    height: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 80px;
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+    /*background: radial-gradient(circle, purple, white 40%, rgb(114, 97, 125));*/
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 5px 6px rgba(0,0,0,0.16), 0 5px 6px rgba(0,0,0,0.23);
+    }   
+
+h2 {
+    margin-top: 30px;
+
+}
+
 input {
     font-family: 'DotGothic16', sans-serif;
+}
+input:focus{
+    border-color: aqua;
 }
 
 .buscador {
     /* font-family: 'DotGothic16', sans-serif; */
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0,0,0,0.23);
     border: 0;
-    border-radius: 3px
+    border-radius: 3px;
+    padding: 8px;
+    width: 220px;
+    text-align: center;
+    
+
 
 
 }
 
+
 .btn {
     /* font-family: 'DotGothic16', sans-serif; */
     width: 50px;
+    text-align: left;
+
     
+
+}
+
+.entrar {
+    color: #ffffff;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    text-align: right;
+
+
 
 }
 
@@ -44,11 +87,14 @@ button{
     margin-top: 20px;
     /*hice que se centrara el botón */
     margin-left: center;
-    background-color: black;
+    margin-bottom: 20px;
+    background-color: #366ABA ;
+    border: 0.2;
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0,0,0,0.23);
 }
+
 
 footer {
     text-align: left; 
