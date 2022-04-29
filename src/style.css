@@ -45,9 +45,11 @@ h2 {
 input {
     font-family: 'DotGothic16', sans-serif;
 }
-input:focus{
-    border-color: aqua;
+
+input::placeholder {
+    color: red;
 }
+
 
 .buscador {
     /* font-family: 'DotGothic16', sans-serif; */
@@ -56,14 +58,17 @@ input:focus{
     border-radius: 3px;
     padding: 8px;
     width: 220px;
-    text-align: center;
+    text-align: center; 
+    /* Antes de aplicar el borde se le pone none */
+    /* outline: none; */
     
-
-
-
 }
-
-
+.buscador:active, .buscador:focus {
+    outline-color: #366ABA; 
+    /*Borde sin accion */
+    /* border: 1px solid red; */
+    
+}
 .btn {
     /* font-family: 'DotGothic16', sans-serif; */
     width: 50px;
@@ -84,6 +89,8 @@ input:focus{
 }
 
 button{
+    display: flex;
+    align-items: center;
     margin-top: 20px;
     /*hice que se centrara el botón */
     margin-left: center;
