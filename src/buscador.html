@@ -9,8 +9,19 @@
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- <div id="data"></div> -->
     <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <header class="logo">
+      <img src="https://i.postimg.cc/dtBp7gf1/3e1c76bae8a90d2a72918313d636c58a.png" alt="Logo PokeGoogle">
+      </header>
+    <div class="container">
+      <!-- en la linea 19 se agrega la ID "data" la cual trae la informacion del script que se hizo en onload.js -->
+      <div class="container2"><img src="PokeGoogle.png" alt="pikachu pokebola" class="pokepika"><div onload="showData()" id="data" class="contianer2"></div></div>
+      <h2>Encuentra tu Pokémon</h2><input class="buscador" type="search" placeholder="Ingresa el nombre">
+      <button class="entrar">¡Encuentralo ya!</button>
+    </div>
+     <script src="onload.js" type="module"></script>
+     <script src="index.js" type="module"></script>
     <footer>Creado por las mejores  maestras Pokémon Gigi y Sol</footer>
   </body>
 </html>
