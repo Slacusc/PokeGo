@@ -1,6 +1,6 @@
 body {
     background: #000033; 
-    background-image: url(https://i.postimg.cc/3xVrxTZM/Eb-Xc-Tn1-XQAIHtji.jpg);
+    background-image: url(https://i.postimg.cc/5yXRnZb7/fondo-jpg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -38,7 +38,7 @@ header {
     }   
 
 h2 {
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
@@ -47,7 +47,7 @@ input {
 }
 
 input::placeholder {
-    color: red;
+    color: rgb(39, 75, 166);
 }
 
 
@@ -69,6 +69,25 @@ input::placeholder {
     /* border: 1px solid red; */
     
 }
+
+.container2 {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.pokepika {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 70px;
+    width: 50px;
+    margin-right: 20px;
+
+}
+
+
 .btn {
     /* font-family: 'DotGothic16', sans-serif; */
     width: 50px;
@@ -113,4 +132,5 @@ footer {
     
 
 }
+
 

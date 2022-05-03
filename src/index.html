@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>PokeGoogle</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <audio src="inicio.mp3" preload="none" ></audio>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <audio src="inicio.mp3" preload="none"></audio>
   </head>
   <body>
-      <div id="root"></div>
-          <main>
-              <header class="logo">
-                  <img src="https://i.postimg.cc/dtBp7gf1/3e1c76bae8a90d2a72918313d636c58a.png" alt="Logo PokeGoogle">
-                  </header>
-           <div class="container">      
-           <div>
-              <h1>¡Derrótalos a Todos!</h1>
-          </div>
-              <h2>¿Cuál es tu nombre Maestro Pokémon?</h2>
-          <form action="">
-            <input class="buscador" type="text" maxlength="15" placeholder="Ingresa tu Nombre" autofocus required>
-          </form>
-        <button name="boton" type="submit"><img src="pikachu.png" alt="Boton Pikachu" id="start" class="btn"><div class="entrar">¡ENTRAR!</div></button>
-      </div> 
-        </main>  
-     <script src="index.js" type="module"></script>
-    <footer>Creado por las mejores  maestras Pokémon Cony y Sol</footer>
+    <div id="root"></div>
+    <main>
+      <header class="logo">
+        <img
+          src="https://i.postimg.cc/dtBp7gf1/3e1c76bae8a90d2a72918313d636c58a.png"
+          alt="Logo PokeGoogle"
+        />
+      </header>
+      <div class="container">
+        <div>
+          <h1>¡Derrótalos a Todos!</h1>
+        </div>
+        <h2>¿Cuál es tu nombre Maestro Pokémon?</h2>
+        <form action="">
+          <input
+            class="buscador"
+            id="name"
+            type="text"
+            maxlength="15"
+            placeholder="Ingresa tu Nombre"
+            autofocus
+            required
+          />
+        </form>
+        <!-- En la linea 41 antes estaba la funcion storeData + showData pero decidimos sacar show data 
+        y llevarla a buscador.html para que se mostrara allá -->
+        <button name="boton" onclick="storeData()">
+          <img class="btn" id="start" src="pikachu.png" alt="Boton Pikachu" />
+          <div class="entrar">¡ENTRAR!</div>
+        </button>
+        <!-- se comenta esta id porque la necesitamos en buscador.html <div id="data"></div> -->
+      </div>
+    </main>
+    <footer>
+      ©PokeGoogle creado por las mejores maestras Pokémon Cony y Sol.
+    </footer>
+    <script src="index.js"></script>
+    <!-- se agrega el script onload.js por recomendacion de Mauri -->
+    <script src="onload.js"></script>
   </body>
 </html>
