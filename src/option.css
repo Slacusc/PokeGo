@@ -53,6 +53,8 @@ body{
     margin-top: 25px;
     list-style: none;
     isolation: isolate;
+    opacity: 0;
+    transition: opacity 0,5 ease;
 }
 .dropdown::after{
     content: "";
@@ -93,4 +95,7 @@ body{
 }
 .active {
     overflow: visible;
+}
+.active .dropdown{
+    opacity: 1;
 }

@@ -16,6 +16,10 @@ body {
 
 }
 
+.hola {
+    color: red;
+}
+
 header {
     margin-top: 50px;
 }
