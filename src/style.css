@@ -17,7 +17,7 @@ body {
 }
 
 .hola {
-    color: red;
+    color: blue;
 }
 
 header {
@@ -161,13 +161,14 @@ footer {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    object-fit: contain;
 }
 .dropdown{
     width: 35%;
     height: auto;
     padding-top: 7px;
     border-radius: 10px;
-    /* position: relative; */
+    position: relative;
     border: 1px solid #aaa;
     background-color: #fff;
     font-size: 15px;
@@ -206,8 +207,8 @@ footer {
 }
 .icon::after{
     content: "";
-    width: 27px;
-    height: 27px;
+    width: 22px;
+    height: 22px;
     filter: opacity(0.8);/*baja el tono a las imágenes*/
     /* background-color: #ccc; */
     background-image: var(--src);
