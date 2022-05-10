@@ -17,3 +17,8 @@ function filtrar(name) {
 // ).innerHTML = `<p class="hola mauri" > Número ${selectedPokemon.num} - ${selectedPokemon.name}</p>`;
 // se exporta la funcion, en este caso "filtrar"
 export { filtrar };
+
+//debilidades
+
+
+//fortalezas
