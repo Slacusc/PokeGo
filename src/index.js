@@ -2,21 +2,25 @@ import { filtrar } from "./buscador.js";
 //primer boton pagina inicio
 // console.log(window.location);
 let btn = document.getElementById("start");
+if(btn){
 btn.addEventListener("click", start);
 function start() {
   window.location = "buscador.html";
+  let name = document.getElementById("name").value;
+  localStorage.setItem("name", name);
 }
-  
-//if para que  este primer boton no se ejecute en la pagina 2
-
-function storeData() {
-  sessionStorage.name = document.getElementById("name").value;
+};
+let data = document.getElementById("data")
+if(data){
+  window.onload = ()=>{
+  document.getElementById("data").innerHTML = "Bienvenido " + localStorage.getItem("name") + " maestro Pokémon"
+} 
 }
-
-//como hacer que estya funcion store data se prenda
-
+;
+    
 //segundo boton buscar
 let busca = document.getElementById("buscar");
+if(busca){
 busca.addEventListener("click", () => {
   console.log("hola");
   let nombre = document.getElementById("nombre").value;
@@ -25,4 +29,5 @@ busca.addEventListener("click", () => {
   img.src = selectedPokemon.img;
   img.classList.add("show");
   console.log(selectedPokemon);
-});
+})
+};
