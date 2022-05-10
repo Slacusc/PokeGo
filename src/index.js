@@ -1,15 +1,19 @@
 import { filtrar } from "./buscador.js";
 //primer boton pagina inicio
 // console.log(window.location);
-// let btn = document.getElementById("start");
-// btn.addEventListener("click", start);
-// function start() {
-//   window.location = "buscador.html";
-// }
+let btn = document.getElementById("start");
+btn.addEventListener("click", start);
+function start() {
+  window.location = "buscador.html";
+}
+  
+//if para que  este primer boton no se ejecute en la pagina 2
 
 function storeData() {
   sessionStorage.name = document.getElementById("name").value;
 }
+
+//como hacer que estya funcion store data se prenda
 
 //segundo boton buscar
 let busca = document.getElementById("buscar");
