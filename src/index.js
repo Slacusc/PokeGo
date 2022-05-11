@@ -10,6 +10,7 @@ function start() {
   localStorage.setItem("name", name);
 }
 };
+
 let data = document.getElementById("data")
 if(data){
   window.onload = ()=>{
