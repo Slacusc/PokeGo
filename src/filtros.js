@@ -2,7 +2,14 @@ import data from "./data/pokemon/pokemon.js";
 function filtrar(name) {
   let pokemon = data.pokemon.filter((pokemon) => pokemon.name == name);
   return pokemon[0];
-}
+};
+
+function filtrartipos(tipo){
+  let pokemon = data.pokemon.filter((pokemon) => pokemon.type.includes(tipo));
+  return pokemon[0];
+  //mauro dijo algo de la funcion random para que lance un poke random
+  
+  }
 // let input = "";
 // let selectedPokemon = filtrar(input);
 // selectedPokemon.type.forEach((tipo) => {
@@ -16,7 +23,7 @@ function filtrar(name) {
 //   "number"
 // ).innerHTML = `<p class="hola mauri" > Número ${selectedPokemon.num} - ${selectedPokemon.name}</p>`;
 // se exporta la funcion, en este caso "filtrar"
-export { filtrar };
+export { filtrar, filtrartipos };
 
 //debilidades
 
