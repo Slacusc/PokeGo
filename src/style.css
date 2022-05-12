@@ -15,11 +15,7 @@ body {
 }
 
 .hola {
-<<<<<<< HEAD
-    color: blue;
-=======
   color: blue;
->>>>>>> Proyecto2
 }
 
 header {
@@ -78,6 +74,7 @@ input::placeholder {
   padding: 8px;
   width: 220px;
   text-align: center;
+  margin-top: 20px;
   /* Antes de aplicar el borde se le pone none */
   /* outline: none; */
 }
@@ -110,17 +107,10 @@ input::placeholder {
 }
 
 .entrar {
-<<<<<<< HEAD
-    color: #ffffff;
-    font-family: 'DotGothic16', sans-serif;
-    font-weight: bold;
-    text-align: right;
-=======
   color: #ffffff;
   font-family: "DotGothic16", sans-serif;
   font-weight: bold;
   text-align: right;
->>>>>>> Proyecto2
 }
 
 button {
@@ -152,12 +142,13 @@ footer {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
+
 .wrapper {
   width: 400px;
   /* height: 20px; */
   margin-top: 20px;
   user-select: none;
-  filter: drop-shadow(0 0 4px #0007);
+  filter: drop-shadow(0 0 4px rgba(164, 161, 161, 0.467));
   overflow: hidden;
 }
 .title {
@@ -170,31 +161,6 @@ footer {
   font-size: 15px;
   font-family: "DotGothic16";
 }
-<<<<<<< HEAD
-.icon{
-    cursor: pointer;
-    padding: 12px 30px 12px 15px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    object-fit: contain;
-}
-.dropdown{
-    width: 35%;
-    height: auto;
-    padding-top: 7px;
-    border-radius: 10px;
-    position: relative;
-    border: 1px solid #aaa;
-    background-color: #fff;
-    font-size: 15px;
-    margin-top: 15px;
-    list-style: none;
-    isolation: isolate;
-    opacity: 0;
-    transition: opacity 0,5 ease;
-=======
 .icon {
   cursor: pointer;
   padding: 12px 30px 12px 15px;
@@ -218,7 +184,6 @@ footer {
   isolation: isolate;
   opacity: 0;
   transition: opacity 0, 5 ease;
->>>>>>> Proyecto2
 }
 .dropdown::after {
   content: "";
@@ -247,18 +212,6 @@ footer {
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
 }
-<<<<<<< HEAD
-.icon::after{
-    content: "";
-    width: 22px;
-    height: 22px;
-    filter: opacity(0.8);/*baja el tono a las imágenes*/
-    /* background-color: #ccc; */
-    background-image: var(--src);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-=======
 .icon::after {
   content: "";
   width: 22px;
@@ -269,7 +222,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
->>>>>>> Proyecto2
 }
 .active .wrapper .container {
   overflow: visible;
@@ -277,9 +229,10 @@ footer {
 .active .dropdown {
   opacity: 1;
 }
-<<<<<<< HEAD
 .active .dropdown{
     opacity: 1;
 }
-=======
->>>>>>> Proyecto2
+
+h5{
+  margin-top: 0px;
+}
