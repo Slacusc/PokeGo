@@ -49,6 +49,17 @@ fortaleza.addEventListener("click", () => {
 }
 
 
+
+let debilidad = document.getElementById("debilidad");
+if(debilidad){
+debilidad.addEventListener("click", () => {
+  selectedPokemon.weaknesses.forEach(tipo => console.log(filtrartipos(tipo))
+  )
+  });
+}
+
+
+
 //   // console.log("hola");
 //   let nombre = document.getElementById("nombre").value;
 //   let selectedPokemon = filtrar(nombre);
