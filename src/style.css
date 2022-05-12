@@ -74,6 +74,7 @@ input::placeholder {
   padding: 8px;
   width: 220px;
   text-align: center;
+  margin-top: 20px;
   /* Antes de aplicar el borde se le pone none */
   /* outline: none; */
 }
@@ -141,12 +142,13 @@ footer {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
+
 .wrapper {
   width: 400px;
   /* height: 20px; */
   margin-top: 20px;
   user-select: none;
-  filter: drop-shadow(0 0 4px #0007);
+  filter: drop-shadow(0 0 4px rgba(164, 161, 161, 0.467));
   overflow: hidden;
 }
 .title {
@@ -226,4 +228,8 @@ footer {
 }
 .active .dropdown {
   opacity: 1;
+}
+
+h5{
+  margin-top: 0px;
 }
