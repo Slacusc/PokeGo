@@ -26,9 +26,10 @@ let selectedPokemon = " "
 let busca = document.getElementById("buscar");
 if(busca){
 busca.addEventListener("click", () => {
-  // console.log("hola");
   let nombre = document.getElementById("nombre").value;
+  // console.log(`aqui está el nombre ${nombre}`)
   selectedPokemon = filtrar(nombre);
+  console.log(selectedPokemon)
   let img = document.getElementById("pokeimg");
   img.src = selectedPokemon.img;
   img.classList.add("show");
@@ -42,11 +43,12 @@ busca.addEventListener("click", () => {
 let fortaleza = document.getElementById("fortaleza");
 if(fortaleza){
 fortaleza.addEventListener("click", () => {
-  selectedPokemon.resistant.forEach(tipo =>{
-    console.log(filtrartipos(tipo))
-  })
+  selectedPokemon.resistant.forEach(tipo => console.log(filtrartipos(tipo))
+  )
   });
 }
+
+
 //   // console.log("hola");
 //   let nombre = document.getElementById("nombre").value;
 //   let selectedPokemon = filtrar(nombre);
