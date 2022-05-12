@@ -1,11 +1,13 @@
 import data from "./data/pokemon/pokemon.js";
 function filtrar(name) {
-  let pokemon = data.pokemon.filter((pokemon) => pokemon.name == name);
+  let minuscula = name.toLowerCase();
+  let pokemon = data.pokemon.filter((pokemon) => pokemon.name == minuscula);
   return pokemon[0];
 };
 
 function filtrartipos(tipo){
   let pokemon = data.pokemon.filter((pokemon) => pokemon.type.includes(tipo));
+  // console.log(`aqui esta pokemon ${pokemon.length}`)
   return pokemon[0];
   //mauro dijo algo de la funcion random para que lance un poke random
   
