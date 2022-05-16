@@ -31,17 +31,15 @@ if(busca){
 busca.addEventListener("click", () => {
   let nombre = document.getElementById("nombre").value;
   //console.log(`aqui está el nombre ${nombre}`)
-  //console.log(typeof nombre);
   selectedPokemon = filtrar(nombre);
   console.log(selectedPokemon.name + "       " + selectedPokemon.img);
   let img = document.getElementById("pokeimg");
-  //console.log(img.src);
   img.src = selectedPokemon.img;
- // console.log(img.src);
- img.classList.add("show");
+  img.classList.add("show");
   document.getElementById("number").innerHTML = `<p class="hola mauri" > Número ${selectedPokemon.num} - ${selectedPokemon.name}</p>`;
   console.log(selectedPokemon);
 })
+
 };
 
 //menú desplegable mas busqueda de data con info pokemon
@@ -56,6 +54,7 @@ fortaleza.addEventListener("click", () => {
   img.classList.add("show");
   document.getElementById("result").innerHTML = `<p class="poke" > Número ${pokemonfortaleza.num} - ${pokemonfortaleza.name}</p>`;
   });
+  
 }
 
 
@@ -70,26 +69,3 @@ debilidad.addEventListener("click", () => {
   document.getElementById("result").innerHTML = `<p class="poke" > Número ${pokemondebilidad.num} - ${pokemondebilidad.name}</p>`;
   });
 }
-
-
-
-// let debilidad = document.getElementById("debilidad");
-// if(debilidad){
-// debilidad.addEventListener("click", () => {
-//   selectedPokemon.weaknesses.forEach(tipo => console.log(filtrartipos(tipo))
-//   )
-//   })
-// };
-
-
-
-//   // console.log("hola");
-//   let nombre = document.getElementById("nombre").value;
-//   let selectedPokemon = filtrar(nombre);
-//   let img = document.getElementById("pokeimg");
-//   img.src = selectedPokemon.img;
-//   img.classList.add("show");
-//   document.getElementById("number").innerHTML = `<p class="hola mauri" > Número ${selectedPokemon.num} - ${selectedPokemon.name}</p>`;
-//   console.log(selectedPokemon);
-// })
-// };

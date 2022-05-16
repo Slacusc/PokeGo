@@ -8,8 +8,8 @@ function filtrar(name) {//name = nombre index.js
 
 function filtrartipos(tipo){
   let pokemon = data.pokemon.filter((pokemon) => pokemon.type.includes(tipo));
-  // console.log(`aqui esta pokemon ${pokemon.length}`)
-  return pokemon[0];
+  let aleatorio = pokemon[Math.floor(Math.random()*pokemon.length)];// console.log(`aqui esta pokemon ${pokemon.length}`)
+  return aleatorio;
   //mauro dijo algo de la funcion random para que lance un poke random
   
   }

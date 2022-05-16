@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -12,6 +13,7 @@ body {
   font-family: "DotGothic16", sans-serif;
   /* este sirve para que la imagen se adapte a la pantalla de la que se llame */
   min-height: 100vh;
+
 }
 
 .hola {
@@ -31,7 +33,7 @@ header {
   margin: 0 auto;
   height: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
@@ -42,6 +44,7 @@ header {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16), 0 5px 6px rgba(0, 0, 0, 0.23);
   font-family: "DotGothic16", sans-serif;
+  min-width: 250px;
 }
 
 .bus {
@@ -158,6 +161,7 @@ input::placeholder {
   font-family: "DotGothic16", sans-serif;
   font-weight: bold;
   text-align: right;
+  height: 50%;
 }
 
 button {
