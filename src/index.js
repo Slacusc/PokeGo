@@ -50,10 +50,24 @@ let fortaleza = document.getElementById("fortaleza");
 if(fortaleza){
 fortaleza.addEventListener("click", () => {
   selectedPokemon.resistant.forEach(tipo => pokemonfortaleza = filtrartipos(tipo))
+  console.log(selectedPokemon.resistant)
   let img = document.getElementById("pokepoke");
-  img.src = selectedPokemon.img;
+  img.src = pokemonfortaleza.img;
   img.classList.add("show");
-  document.getElementById("number").innerHTML = `<p class="hola mauri" > Número ${selectedPokemon.num} - ${selectedPokemon.name}</p>`;
+  document.getElementById("result").innerHTML = `<p class="poke" > Número ${pokemonfortaleza.num} - ${pokemonfortaleza.name}</p>`;
+  });
+}
+
+
+let debilidad = document.getElementById("debilidad");
+if(debilidad){
+debilidad.addEventListener("click", () => {
+  selectedPokemon.weaknesses.forEach(tipo => pokemondebilidad = filtrartipos(tipo))
+  // console.log(selectedPokemon.resistant)
+  let img = document.getElementById("pokepoke");
+  img.src = pokemondebilidad.img;
+  img.classList.add("show");
+  document.getElementById("result").innerHTML = `<p class="poke" > Número ${pokemondebilidad.num} - ${pokemondebilidad.name}</p>`;
   });
 }
 
