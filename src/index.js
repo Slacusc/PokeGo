@@ -30,12 +30,15 @@ let busca = document.getElementById("buscar");
 if(busca){
 busca.addEventListener("click", () => {
   let nombre = document.getElementById("nombre").value;
-  // console.log(`aqui está el nombre ${nombre}`)
+  //console.log(`aqui está el nombre ${nombre}`)
+  //console.log(typeof nombre);
   selectedPokemon = filtrar(nombre);
-  console.log(selectedPokemon)
+  console.log(selectedPokemon.name + "       " + selectedPokemon.img);
   let img = document.getElementById("pokeimg");
+  //console.log(img.src);
   img.src = selectedPokemon.img;
-  img.classList.add("show");
+ // console.log(img.src);
+ img.classList.add("show");
   document.getElementById("number").innerHTML = `<p class="hola mauri" > Número ${selectedPokemon.num} - ${selectedPokemon.name}</p>`;
   console.log(selectedPokemon);
 })
