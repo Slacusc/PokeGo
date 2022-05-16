@@ -22,6 +22,7 @@ header {
   margin-top: 50px;
 }
 
+
 .container {
   width: 500px;
   margin: 0 auto;
@@ -35,7 +36,7 @@ header {
   border: 5px solid #ffffff;
   border-radius: 5px;
   /*background: radial-gradient(circle, purple, white 40%, rgb(114, 97, 125));*/
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16), 0 5px 6px rgba(0, 0, 0, 0.23);
   font-family: "DotGothic16", sans-serif;
 }
@@ -58,6 +59,34 @@ form {
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16), 0 5px 6px rgba(0, 0, 0, 0.23);*/
 }
 
+h1 {
+ 
+  margin-top: 15%;
+  
+}
+
+/* top- right-bottom-left*/
+.intro{
+  text-align: justify;
+  padding: 0 30px;
+  font-size: 16px;
+  white-space:pre-wrap;
+  margin-top: -50px;
+}
+
+b {
+ font-weight: bold;
+}
+
+.h2index {
+  margin-top: -10%;
+}
+
+h2 {
+  margin-top: 1%;
+}
+
+
 input {
   font-family: "DotGothic16", sans-serif;
 }
@@ -74,7 +103,8 @@ input::placeholder {
   padding: 8px;
   width: 220px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: -60px;
+  margin-bottom: 10%;
   /* Antes de aplicar el borde se le pone none */
   /* outline: none; */
 }
@@ -136,9 +166,10 @@ button {
 
 footer {
   text-align: left;
-  margin-left: 20px;
+  margin: 300px 20px 50px;
+  /*margin-left: 20px;
   margin-top: 300px;
-  margin-bottom: 50px;
+  margin-bottom: 50px;*/
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
