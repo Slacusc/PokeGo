@@ -1,7 +1,8 @@
 import data from "./data/pokemon/pokemon.js";
-function filtrar(name) {
+function filtrar(name) {//name = nombre index.js
   let minuscula = name.toLowerCase();
-  let pokemon = data.pokemon.filter((pokemon) => pokemon.name == minuscula);
+  let pokemon = data.pokemon.filter((pokemon) => pokemon.name == minuscula);//(pokemon(en naranajo) cada pokemon iterado)
+  //console.log(pokemon);
   return pokemon[0];
 };
 
