@@ -50,7 +50,7 @@ if (fortaleza) {
     pokemonfortaleza = [];
     selectedPokemon.resistant.forEach((tipo) =>
       pokemonfortaleza.push(filtrartipos(tipo))
-    );
+    )
     console.log(pokemonfortaleza);
     result.innerHTML = "";
     pokemonfortaleza.forEach((pokemon) => {
@@ -67,7 +67,7 @@ if (fortaleza) {
     //   "result"
     // ).innerHTML = `<p class="poke" > Número ${pokemonfortaleza.num} - ${pokemonfortaleza.name}</p>`;
   })
-}
+};
 
 let db = document.getElementById("resultado");
 let debilidad = document.getElementById("debilidad");
@@ -80,11 +80,11 @@ if (debilidad) {
     console.log(pokemondebilidad);
     db.innerHTML = "";
     pokemondebilidad.forEach((pokemon)=>{
-      let pokepoke = `
+      let pkm = `
       <img src=${pokemon.img}>
       
       <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p>`;
-      db.innerHTML += pokepoke;
+      db.innerHTML += pkm;
     })
     })
     }
