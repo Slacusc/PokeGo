@@ -59,15 +59,14 @@ if (fortaleza) {
       
       <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p>`;
       result.innerHTML += pkmn;
-    });
-
+    })
     // let img = document.getElementById("pokepoke");
     // img.src = pokemonfortaleza.img;
     // img.classList.add("show");
     // document.getElementById(
     //   "result"
     // ).innerHTML = `<p class="poke" > Número ${pokemonfortaleza.num} - ${pokemonfortaleza.name}</p>`;
-  });
+  })
 }
 
 let db = document.getElementById("resultado");
@@ -86,12 +85,12 @@ if (debilidad) {
       
       <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p>`;
       db.innerHTML += pokepoke;
-    });
+    })
     })
     }
-    // console.log(selectedPokemon.resistant)
-    // let img = document.getElementById("pokepoke");
-    // img.src = pokemondebilidad.img;
+//     // console.log(selectedPokemon.resistant)
+//     // let img = document.getElementById("pokepoke");
+//     // img.src = pokemondebilidad.img;
     // img.classList.add("show");
     // document.getElementById(
     //   "result"
