@@ -2,7 +2,7 @@ body {
   background: #000033;
   background-image: url(https://i.postimg.cc/5yXRnZb7/fondo-jpg.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding: 0;
@@ -12,8 +12,7 @@ body {
   color: rgb(0, 0, 0);
   font-family: "DotGothic16", sans-serif;
   /* este sirve para que la imagen se adapte a la pantalla de la que se llame */
-  min-height: 100vh;
-
+  height: 100vh;
 }
 
 .hola {
@@ -26,7 +25,6 @@ body {
 header {
   margin-top: 50px;
 }
-
 
 .container {
   width: 500px;
@@ -80,22 +78,20 @@ form {
 }
 
 h1 {
- 
   margin-top: 15%;
-  
 }
 
 /* top- right-bottom-left*/
-.intro{
+.intro {
   text-align: justify;
   padding: 0 30px;
   font-size: 16px;
-  white-space:pre-wrap;
+  white-space: pre-wrap;
   margin-top: -50px;
 }
 
 b {
- font-weight: bold;
+  font-weight: bold;
 }
 
 .h2index {
@@ -105,7 +101,6 @@ b {
 h2 {
   margin-top: 1%;
 }
-
 
 input {
   font-family: "DotGothic16", sans-serif;
@@ -204,7 +199,7 @@ footer {
   overflow: hidden;
 }
 .title {
-  width: 50%; 
+  width: 50%;
   height: 20%;
   border-radius: 10px;
   border: 1px solid #999;
@@ -223,7 +218,6 @@ footer {
   object-fit: contain;
 }
 .dropdown {
-
   width: 50%;
   height: auto;
   padding-top: 7px;
@@ -282,10 +276,22 @@ footer {
 .active .dropdown {
   opacity: 1;
 }
-.active .dropdown{
-    opacity: 1;
+.active .dropdown {
+  opacity: 1;
 }
 
-h5{
+h5 {
   margin-top: 0px;
+}
+
+@media (min-width: 767px) {
+  body {
+    background-image: url(https://i.postimg.cc/5yXRnZb7/fondo-jpg.jpg);
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    background-image: url(https://i.postimg.cc/5yXRnZb7/fondo-jpg.jpg);
+  }
 }
