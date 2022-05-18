@@ -80,10 +80,12 @@ if (debilidad) {
     console.log(pokemondebilidad);
     db.innerHTML = "";
     pokemondebilidad.forEach((pokemon)=>{
+      // let deb = `<p> Debilidad <br> </p>`;
       let pkm = `
+      Debilidad <br>
       <img src=${pokemon.img}>
       
-      <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p>`;
+      <p class="poke" >  Número ${pokemon.num} - ${pokemon.name} </p>`;
       db.innerHTML += pkm;
     })
     })
