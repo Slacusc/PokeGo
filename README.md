@@ -45,21 +45,21 @@ la victoria del combate Pokémon.
 
 * Una vez con la información recogida de la encuesta, se hizo el primer prototipo de baja, el cual fue testeado solo por el público objetivo con el cual trabajaríamos.
 
-![protipoBaja]()
+![protipoBaja](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/prototipoBaja.png)
 
 ### Logo y paleta de colores
 
 * El logo y el diseño de la app, se trabajo bajo una imagen de referencia del juego Pokémon Go, para que el usuario viera la relación que existe entre estas app. 
 
-![imagenReferencia]()
-![logo]()
-![paletaColores]()
+![imagenReferencia](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/imagenReferencia.png)
+![logo](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/logo.png)
+![paletaColores](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/paletaColores.png)
 
 ### Prototipo de alta
 
 * Se realizaron las modificaciones que fueron entregadas por los futuros usuarios mediante encuesta, para posteriormente desarrollar el prototipo de alta fidelidad. Este también fue testeado por el público objetivo, para afinar detalles, los cuales fueron considerados en el desarrollo de app.
 
-![protipoAlta]()
+![protipoAlta](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/prototipoAlta.png)
 
 ### Historias de Usuarios
 
