@@ -56,9 +56,9 @@ if (fortaleza) {
     result.innerHTML = "";
     pokemonfortaleza.forEach((pokemon) => {
       let pkmn = `
-      <img src=${pokemon.img}>
+      <div class= "card"> <img src=${pokemon.img}>
       
-      <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p>`;
+      <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p></div>`;
       result.innerHTML += pkmn;
     })
     // let img = document.getElementById("pokepoke");
