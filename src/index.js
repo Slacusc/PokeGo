@@ -54,7 +54,8 @@ if (fortaleza) {
     )
     console.log(pokemonfortaleza);
     result.innerHTML = "";
-    pokemonfortaleza.forEach((pokemon) => {
+    let limite = pokemonfortaleza.slice(0,3)
+    limite.forEach((pokemon) => {
       let pkmn = `
       <div class= "card"> <img src=${pokemon.img}>
       
