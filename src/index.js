@@ -47,17 +47,19 @@ let result = document.getElementById("resultado");
 let fortaleza = document.getElementById("fortaleza");
 if (fortaleza) {
   fortaleza.addEventListener("click", () => {
+    document.getElementById("seleccion").innerHTML = "Fortaleza"
     pokemonfortaleza = [];
     selectedPokemon.resistant.forEach((tipo) =>
       pokemonfortaleza.push(filtrartipos(tipo))
     )
     console.log(pokemonfortaleza);
     result.innerHTML = "";
-    pokemonfortaleza.forEach((pokemon) => {
+    let limite = pokemonfortaleza.slice(0,3)
+    limite.forEach((pokemon) => {
       let pkmn = `
-      <img src=${pokemon.img}>
+      <div class= "card"> <img src=${pokemon.img}>
       
-      <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p>`;
+      <p class="poke" > Número ${pokemon.num} - ${pokemon.name} </p></div>`;
       result.innerHTML += pkmn;
     })
     // let img = document.getElementById("pokepoke");
@@ -73,19 +75,18 @@ let db = document.getElementById("resultado");
 let debilidad = document.getElementById("debilidad");
 if (debilidad) {
   debilidad.addEventListener("click", () => {
+    document.getElementById("seleccion").innerHTML = "Debilidad"
     pokemondebilidad = [];
     selectedPokemon.weaknesses.forEach((tipo) =>
       pokemondebilidad.push(filtrartipos(tipo))
     );
     console.log(pokemondebilidad);
     db.innerHTML = "";
-    pokemondebilidad.forEach((pokemon)=>{
-      // let deb = `<p> Debilidad <br> </p>`;
+    let limite = pokemondebilidad.slice(0,3)
+    limite.forEach((pokemon)=>{
       let pkm = `
-      Debilidad <br>
-      <img src=${pokemon.img}>
-      
-      <p class="poke" >  Número ${pokemon.num} - ${pokemon.name} </p>`;
+      <div class = "card"> <img src=${pokemon.img}>
+      <p class="poke" >  Número ${pokemon.num} - ${pokemon.name} </p></div>`;
       db.innerHTML += pkm;
     })
     })
