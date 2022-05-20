@@ -283,10 +283,19 @@ footer {
 h5 {
   margin-top: 0px;
 }
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (min-width: 767px) {
+
   body {
     background-image: url(https://i.postimg.cc/5yXRnZb7/fondo-jpg.jpg);
+  }
+  .cardcontainer {
+    flex-direction: row;
+
   }
 }
 
