@@ -99,12 +99,13 @@ if (debilidad) {
     //   "result"
 
     const wrapper = document.querySelector(".wrapper");
-wrapper.addEventListener("click", (ev) => {
+    if (wrapper){
+      wrapper.addEventListener("click", (ev) => {
    // let el = ev.target.parentElement;
    // if (el == wrapper || el.parentElement == wrapper) {
         wrapper.classList.toggle("active");
    // }  
    
-});
+}) };
 
 
