@@ -1,5 +1,5 @@
-import { filtrar, filtrartipos } from "./filtros.js";
-import pokemon from "./data/pokemon/pokemon.js";
+import { filtrar, filtrartipos } from "./filtros.js";//importación específica múltiple
+import pokemon from "./data/pokemon/pokemon.js"; //importación por defecto
 let selectedPokemon = " ";
 let pokemonfortaleza = [];
 let pokemondebilidad = [];

@@ -1,4 +1,4 @@
-export default {
+export default { //son arrays de objetos[{}]
   "pokemon": [{
     "num": "001",
     "name": "bulbasaur",
