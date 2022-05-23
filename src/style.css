@@ -297,6 +297,12 @@ h5 {
     flex-direction: row;
 
   }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
 }
 
 @media (min-width: 480px) {
