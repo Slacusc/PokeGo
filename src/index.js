@@ -97,3 +97,14 @@ if (debilidad) {
     // img.classList.add("show");
     // document.getElementById(
     //   "result"
+
+    const wrapper = document.querySelector(".wrapper");
+wrapper.addEventListener("click", (ev) => {
+   // let el = ev.target.parentElement;
+   // if (el == wrapper || el.parentElement == wrapper) {
+        wrapper.classList.toggle("active");
+   // }  
+   
+});
+
+
