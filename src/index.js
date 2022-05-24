@@ -1,5 +1,6 @@
 import { filtrar, filtrartipos } from "./filtros.js";
 import pokemon from "./data/pokemon/pokemon.js";
+let pkmn = pokemon.pokemon
 let selectedPokemon = " ";
 let pokemonfortaleza = [];
 let pokemondebilidad = [];
@@ -8,7 +9,7 @@ let pokemondebilidad = [];
 let btn = document.getElementById("start");
 if (btn) {
   btn.addEventListener("click", start);
-  function start() {
+  function start(){
     window.location = "buscador.html";
     let name = document.getElementById("name").value;
     localStorage.setItem("name", name);
@@ -30,15 +31,15 @@ if (busca) {
   busca.addEventListener("click", () => {
     let nombre = document.getElementById("nombre").value;
     //console.log(`aqui está el nombre ${nombre}`)
-    selectedPokemon = filtrar(nombre);
-    console.log(selectedPokemon.name + "       " + selectedPokemon.img);
+    selectedPokemon = filtrar(nombre,pkmn);
+    // console.log(selectedPokemon.name + "       " + selectedPokemon.img);
     let img = document.getElementById("pokeimg");
     img.src = selectedPokemon.img;
     img.classList.add("show");
     document.getElementById(
       "number"
     ).innerHTML = `<p class="hola mauri" > Número ${selectedPokemon.num} - ${selectedPokemon.name}</p>`;
-    console.log(selectedPokemon);
+    // console.log(selectedPokemon);
   });
 }
 
@@ -50,9 +51,9 @@ if (fortaleza) {
     document.getElementById("seleccion").innerHTML = "Fortaleza"
     pokemonfortaleza = [];
     selectedPokemon.resistant.forEach((tipo) =>
-      pokemonfortaleza.push(filtrartipos(tipo))
+      pokemonfortaleza.push(filtrartipos(tipo,pkmn))
     )
-    console.log(pokemonfortaleza);
+    // console.log(pokemonfortaleza);
     result.innerHTML = "";
     let limite = pokemonfortaleza.slice(0,3)
     limite.forEach((pokemon) => {
@@ -69,7 +70,7 @@ if (fortaleza) {
     //   "result"
     // ).innerHTML = `<p class="poke" > Número ${pokemonfortaleza.num} - ${pokemonfortaleza.name}</p>`;
   })
-};
+}
 
 let db = document.getElementById("resultado");
 let debilidad = document.getElementById("debilidad");
@@ -78,9 +79,9 @@ if (debilidad) {
     document.getElementById("seleccion").innerHTML = "Debilidad"
     pokemondebilidad = [];
     selectedPokemon.weaknesses.forEach((tipo) =>
-      pokemondebilidad.push(filtrartipos(tipo))
+      pokemondebilidad.push(filtrartipos(tipo.pkmn))
     );
-    console.log(pokemondebilidad);
+    // console.log(pokemondebilidad);
     db.innerHTML = "";
     let limite = pokemondebilidad.slice(0,3)
     limite.forEach((pokemon)=>{
@@ -100,12 +101,12 @@ if (debilidad) {
 
     const wrapper = document.querySelector(".wrapper");
     if (wrapper){
-      wrapper.addEventListener("click", (ev) => {
+      wrapper.addEventListener("click", () => {
    // let el = ev.target.parentElement;
    // if (el == wrapper || el.parentElement == wrapper) {
         wrapper.classList.toggle("active");
    // }  
    
-}) };
+}) }
 
 
