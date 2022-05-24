@@ -1,10 +1,10 @@
-// estas funciones son de ejemplo
+// // estas funciones son de ejemplo
 
-export const filterName = (pokemon) => {
+// export const filterName = (pokemon) => {
   
-  return 'example';
-};
+//   return 'example';
+// };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+// export const anotherExample = () => {
+//   return 'OMG';
+// };
