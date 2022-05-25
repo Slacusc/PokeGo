@@ -80,7 +80,7 @@ if (debilidad) {
     document.getElementById("seleccion").innerHTML = "Debilidad"
     pokemondebilidad = [];
     selectedPokemon.weaknesses.forEach((tipo) =>
-      pokemondebilidad.push(filtrartipos(tipo.pkmn))
+      pokemondebilidad.push(filtrartipos(tipo,pkmn))
     );
     // console.log(pokemondebilidad);
     db.innerHTML = "";

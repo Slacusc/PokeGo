@@ -10,7 +10,7 @@ function filtrar(name,pkmn) {// la funcion parte en la linea 29 del index.js nam
 
 //menú desplegable, debilidades y fortalezas
 function filtrartipos(tipo,pkmn){// la fx parte en L.47 de index.js. Nos filtra según el tipo de pokemon dentro la opción elegida, se le pasa un 2do parámetro el cual contiene la data, proviene del arch.index.js L.3
-  let pokemon = pkmn.filter((pokemon) => pokemon.type.includes(tipo));// se filtra sobre la variable pkmn(data), al argumento pokemon de la fx( dps => es la condición), queremos que nos traiga el type (tipo del pokemon grass, electric , etc) del array. includes se usa para comprobar si un string existe dentro de otra, en este caso dentro de type
+  let pokemon = pkmn.filter((pokemon) => pokemon.type.includes(tipo,pkmn));// se filtra sobre la variable pkmn(data), al argumento pokemon de la fx( dps => es la condición), queremos que nos traiga el type (tipo del pokemon grass, electric , etc) del array. includes se usa para comprobar si un string existe dentro de otra, en este caso dentro de type
   let aleatorio = pokemon[Math.floor(Math.random()*pokemon.length)];// console.log(`aqui esta pokemon ${pokemon.length}`)
   return aleatorio; // con este return hacemos que se resetee y se vaya limpiando donde aparecen los pokemones,y no se acumulen cada vez que uno elige la opción.
   //mauro dijo algo de la funcion random para que lance un poke random
