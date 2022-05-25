@@ -3,7 +3,9 @@ const test = [
   {"name": "pikachu","type":["electric"]},
   {"name": "bulbasaur", "type": ["grass"]},
   {"name": "squirtle", "type": ["water"]},
-  {"name": "ditto", "type": ["normal"]}]
+  {"name": "ditto", "type": ["normal"]},
+  {"name": "togepi", "type": ["fairy"]},
+  {"name": "gengar", "type": ["ghost"]}]
 
 
 describe('filtrar', () => {
@@ -47,6 +49,13 @@ describe('filtrartipos', () => {
     expect(filtrartipos(type,test)).toBe(test[2]
   )
   })
+
+  it('If i search for "gengar" type, the result must be "ghost"', ()=>{
+    let type = "ghost"
+    expect(filtrartipos(type,test)).toBe(test[5]
+  )
+  })
+
 
  });
 

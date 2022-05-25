@@ -5,16 +5,16 @@ let selectedPokemon = " ";
 let pokemonfortaleza = [];
 let pokemondebilidad = [];
 
-//donde se aloja la data
+//1 donde se aloja la data del nmombre de usuario
 let btn = document.getElementById("start");
+function start(){
+  window.location = "buscador.html";
+  let name = document.getElementById("name").value;
+  localStorage.setItem("name", name)}
 if (btn) {
   btn.addEventListener("click", start);
-  function start(){
-    window.location = "buscador.html";
-    let name = document.getElementById("name").value;
-    localStorage.setItem("name", name);
   }
-}
+
 
 //donde se refleja la data
 let data = document.getElementById("data");

@@ -21,7 +21,7 @@ la victoria del combate Pokémon.
 
 * Rango etario es : 13 años a > 50 años
 * Mayormente el público es femenino 63%, hombres 37%
-* Los jugadores de mayor porcentaje fueron personas que recién están entrando a este mundo, es un usuario de nivel 1(LVL1). Por tanto son personas que necesitan y buscan información que les ayude a desenvolverse sin problemas en el juego Pokémon GO, ya que ahí utilizarían lo aprendido de nuestra app.
+* Los jugadores de mayor porcentaje fueron personas que recién están entrando a este mundo, es un usuario de nivel 1 (LVL1). Por tanto son personas que necesitan y buscan información que les ayude a desenvolverse sin problemas en el juego Pokémon GO, ya que ahí utilizarían lo aprendido de nuestra app.
 
 
 ### Objetivos de estos usuarios en relación con el producto
@@ -47,12 +47,21 @@ la victoria del combate Pokémon.
 
 ![protipoBaja](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/prototipoBaja.png)
 
-### Logo y paleta de colores
+## Diseño
 
-* El logo y el diseño de la app, se trabajo bajo una imagen de referencia del juego Pokémon Go, para que el usuario viera la relación que existe entre estas app. 
+### Imagen de referencia
+
+* El logo y el diseño de la app, se trabajo bajo la siguiente imagen de referencia, la cual pertenece al juego Pokémon Go, para que el usuario viera la relación que existe entre estas app. 
 
 ![imagenReferencia](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/imagenReferencia.png)
+
+### Logo 
+
 ![logo](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/logo.png)
+
+
+### Paleta de colores
+
 ![paletaColores](https://raw.githubusercontent.com/Slacusc/SCL020-data-lovers/main/src/imgReadme/paletaColores.png)
 
 ### Prototipo de alta
