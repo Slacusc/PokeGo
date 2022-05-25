@@ -1,8 +1,9 @@
 import { filtrar, filtrartipos } from '../src/filtros.js';
 const test = [
-  {"name": "pikachu",
-  "type":["electric"]
-},{"name": "bulbasaur", "type": ["grass"]},{"name": "squirtle", "type": ["water"]}]
+  {"name": "pikachu","type":["electric"]},
+  {"name": "bulbasaur", "type": ["grass"]},
+  {"name": "squirtle", "type": ["water"]},
+  {"name": "ditto", "type": ["normal"]}]
 
 
 describe('filtrar', () => {
@@ -28,9 +29,13 @@ describe('filtrar', () => {
   )
   })
 
-
 });
 
+it('if receive "Ditto", have to return "ditto" using the function .toLowerCase', ()=>{
+  let name = "Ditto"
+  expect(filtrar(name,test)).toBe(test[3]
+)
+})
 
 describe('filtrartipos', () => {
   it('is a function', () => { 
