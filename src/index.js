@@ -1,6 +1,6 @@
 import { filtrar, filtrartipos } from "./filtros.js";
 import pokemon from "./data/pokemon/pokemon.js";
-let pkmn = pokemon.pokemon
+let pkmn = pokemon.pokemon // se utiliza para no utilizar import y export. pokemon.pokemon es la ruta para buscar la info de la data
 let selectedPokemon = " ";
 let pokemonfortaleza = [];
 let pokemondebilidad = [];
@@ -43,8 +43,8 @@ if (busca) {
   });
 }
 
-//menú desplegable mas busqueda de data con info pokemon
-let result = document.getElementById("resultado");
+//menú desplegable opción-fortaleza 
+let result = document.getElementById("resultado");// viene del archivo buscador.html. Es donde están contenidos los resultados del menú,las imágenes de los 3 pokémones
 let fortaleza = document.getElementById("fortaleza");
 if (fortaleza) {
   fortaleza.addEventListener("click", () => {
@@ -72,6 +72,7 @@ if (fortaleza) {
   })
 }
 
+// menú desplegable opción-debilidad
 let db = document.getElementById("resultado");
 let debilidad = document.getElementById("debilidad");
 if (debilidad) {
