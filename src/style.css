@@ -13,7 +13,6 @@ body {
   font-family: "DotGothic16", sans-serif;
   /* este sirve para que la imagen se adapte a la pantalla de la que se llame */
   height: 100vh;
-  width: 100vw;
 }
 /* "hora y poke" están puestos en el index.js */
 .hola {
@@ -28,7 +27,7 @@ header {
 }
 
 .container {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
   height: 0 auto;
   display: flex;
