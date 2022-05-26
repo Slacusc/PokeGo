@@ -2,15 +2,16 @@
 
 ## Resumen
 
-**PokeGoogle** es una plataforma donde podrás encontrar información de los Pokémones de las regiones **Kanto y Jotho**. El maestro Pokémon (usuario) podrá ingresar su Pokémon con el cual se quiere enfrentar a duelo y ver cuales podrían ser sus futuros contrincantes,filtrando la información según las fortalezas o debilidades de estos. Permitiéndole preparar una mejor estrategia de juego frente a su oponente, asegurándole
-la victoria del combate Pokémon.
+**PokeGoogle** es una plataforma donde podrás encontrar información de los Pokémones de las regiones **Kanto y Jotho**. El maestro Pokémon (usuario) podrá ingresar su Pokémon con el cual se quiere enfrentar a duelo y ver cuales podrían ser sus futuros contrincantes,filtrando la información según las fortalezas o debilidades de estos. Permitiéndole preparar una mejor estrategia de juego frente a su oponente, asegurándole la victoria del combate Pokémon.
 
 ***
 
 ## Presentación 
 
-![screen1]()
-![screen2]()
+**Index para ingreso de usuario**
+![alt text](./src/imagenes/index.png)
+**Buscador de pokemones y también filtro de fortalezas y debilidades**
+![alt text](./src/imagenes/buscador.png)
 
 ## Investigación UX
 
