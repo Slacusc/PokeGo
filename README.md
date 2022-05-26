@@ -7,10 +7,13 @@
 ***
 
 ## Presentación 
+Experiencia usuario.
 
-**Index para ingreso de usuario**
+## Index para ingreso de usuario
+
 ![alt text](./src/imagenes/index.png)
-**Buscador de pokemones y también filtro de fortalezas y debilidades**
+## Buscador de pokemones y también filtro de fortalezas y debilidades
+
 ![alt text](./src/imagenes/buscador.png)
 
 ## Investigación UX
