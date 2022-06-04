@@ -48,7 +48,7 @@ let result = document.getElementById("resultado");// viene del archivo buscador.
 let fortaleza = document.getElementById("fortaleza");
 if (fortaleza) {
   fortaleza.addEventListener("click", () => {
-    document.getElementById("seleccion").innerHTML = "Fortaleza"
+    document.getElementById("seleccion").innerHTML
     pokemonfortaleza = [];
     selectedPokemon.resistant.forEach((tipo) =>
       pokemonfortaleza.push(filtrartipos(tipo,pkmn))
