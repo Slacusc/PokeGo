@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+     <!-- En la linea 6 se encuentra la línea para hacer responsiva la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeGoogle</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <audio src="Inicio.mp3" preload="none" autoplay controls></audio>
+  </head>
+  <body>
+    <div id="root"></div>
+    <header class="logo">
+      <img
+        src="https://i.postimg.cc/dtBp7gf1/3e1c76bae8a90d2a72918313d636c58a.png"
+        alt="Logo PokeGoogle"
+      />
+    </header>
+    <main>
+      <div class="container">
+        <div>
+          <h1>¡Derrótalos!</h1>
+        </div>
+        <div class="intro">
+          <p><img src="./icon/debilidad.png">El primer paso para iniciar tu camino como <b>Maestro Pokémon</b>, es conocer  y aprender las fortalezas y debilidades de los Pokémones de tus contrincantes. <br><br><img src="./icon/fortaleza.png">En <b>©PokeGoogle</b>  tendrás la información necesaria de los Pokémones de las regiones <b>Kanto y Jotho</b>.
+            <br><img src="./icon/par.png">Vive la experiencia de convertirte en un <b>gran Maestro Pokémon</b>, derribando a tus adversarios, con estrategia de juego.
+          </p>
+        </div>
+        <div class="h2index">
+        <h2>¿Cuál es tu nombre Maestro Pokémon?</h2>
+      </div>
+        <form action="">
+          <input
+            class="buscador"
+            id="name"
+            type="text"
+            maxlength="15"
+            placeholder="Ingresa tu Nombre"
+            autofocus
+            required
+          />
+        </form>
+        <!-- En la linea 41 antes estaba la funcion storeData + showData pero decidimos sacar show data 
+        y llevarla a buscador.html para que se mostrara allá -->
+        <button name="boton" id="start" class="entrar">
+          <img class="btn" src="./imagenes/pikachu.png" alt="Boton Pikachu" />
+          ¡ENTRAR!
+        </button> 
+        <!-- se comenta esta id porque la necesitamos en buscador.html <div id="data"></div> -->
+        <!-- <img id="pokeimg" src="" alt="foto x"> -->
+      </div>
+    </main>
+    <footer>
+      ©PokeGoogle creado por las mejores maestras Pokémon Cony y Sol.
+    </footer>
+     <!-- module, es  para que los modulos funcionen import y export  -->
+    <script src="index.js" type="module"></script>
+    <!-- se agrega el script onload.js por recomendacion de Mauri -->
+    <!-- <script src="onload.js"></script> -->
+  </body>
+</html>
